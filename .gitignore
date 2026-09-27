@@ -1,0 +1,4 @@
+.claude/agent-memory/
+.claude/settings.local.json
+.claude/hook-input.log
+outbox/

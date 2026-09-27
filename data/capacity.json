@@ -1,0 +1,54 @@
+{
+  "team": "Platform Engineering",
+  "as_of": "2026-09-14",
+  "sprint_length_days": 14,
+  "velocity_points_per_sprint": 21,
+  "release_cadence": "Releases ship 7 days after a sprint closes, after regression and stabilization testing. Work that finishes development inside a given sprint ships on that sprint's release_date, not before.",
+  "sprints": [
+    {
+      "id": "2026-S19",
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-21",
+      "release_date": "2026-09-28",
+      "status": "in_progress",
+      "capacity_points": 21,
+      "committed_points": 21,
+      "open_points": 0,
+      "committed_items": ["BL-1050"]
+    },
+    {
+      "id": "2026-S20",
+      "start_date": "2026-09-22",
+      "end_date": "2026-10-05",
+      "release_date": "2026-10-12",
+      "status": "committed",
+      "capacity_points": 21,
+      "committed_points": 21,
+      "open_points": 0,
+      "committed_items": ["BL-1051"]
+    },
+    {
+      "id": "2026-S21",
+      "start_date": "2026-10-06",
+      "end_date": "2026-10-19",
+      "release_date": "2026-10-26",
+      "status": "open",
+      "capacity_points": 21,
+      "committed_points": 0,
+      "open_points": 21,
+      "committed_items": []
+    },
+    {
+      "id": "2026-S22",
+      "start_date": "2026-10-20",
+      "end_date": "2026-11-02",
+      "release_date": "2026-11-09",
+      "status": "open",
+      "capacity_points": 21,
+      "committed_points": 0,
+      "open_points": 21,
+      "committed_items": []
+    }
+  ],
+  "notes": "Sprints 2026-S19 and 2026-S20 are fully committed (BL-1050 and BL-1051 respectively) with no open points in either. 2026-S21 is the earliest sprint with open capacity. Any proposed date landing inside S19 or S20 is assuming capacity that is already committed elsewhere."
+}

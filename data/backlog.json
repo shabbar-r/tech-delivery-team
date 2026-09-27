@@ -1,0 +1,53 @@
+{
+  "schema_note": "Internal product backlog. Dates are ISO 8601. This file belongs to the product agent.",
+  "items": [
+    {
+      "id": "BL-1042",
+      "title": "Bulk inventory export truncates at 10,000 SKUs",
+      "component": "inventory-export",
+      "status": "in_progress",
+      "priority": "P2",
+      "affected_versions": ["2.4", "2.5"],
+      "created": "2026-08-11",
+      "assigned_sprint": "2026-S19",
+      "target_release": null,
+      "notes": "Root cause identified: pagination cursor overflow in the export worker past 10k rows. Fix is in code review. No committed release date yet."
+    },
+    {
+      "id": "BL-1050",
+      "title": "Partner data migration, phase 2 cutover",
+      "component": "partner-sync",
+      "status": "committed",
+      "priority": "P1",
+      "affected_versions": [],
+      "created": "2026-07-30",
+      "assigned_sprint": "2026-S19",
+      "target_release": "2026-09-28",
+      "notes": "Committed to top-tier partner accounts. Holds full team allocation for sprint 2026-S19."
+    },
+    {
+      "id": "BL-1051",
+      "title": "SOC2 audit remediation, access logging",
+      "component": "platform-security",
+      "status": "committed",
+      "priority": "P1",
+      "affected_versions": [],
+      "created": "2026-08-04",
+      "assigned_sprint": "2026-S20",
+      "target_release": "2026-10-12",
+      "notes": "Compliance-mandated deadline, cannot slip. Holds full team allocation for sprint 2026-S20."
+    },
+    {
+      "id": "BL-1075",
+      "title": "Sync worker double-applies inventory updates on retry",
+      "component": "inventory-sync",
+      "status": "planned",
+      "priority": "P2",
+      "affected_versions": ["2.5"],
+      "created": "2026-06-19",
+      "assigned_sprint": "2026-S21",
+      "target_release": "2026-10-26",
+      "notes": "Suspected race between the retry path and the update-apply step after a sync job fails partway through. Queued behind BL-1050 and BL-1051, which hold full team capacity through sprints 2026-S19 and 2026-S20. Needs a confirmed reproduction before treating a new client report as the same failure mode."
+    }
+  ]
+}
