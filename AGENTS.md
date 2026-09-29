@@ -29,6 +29,7 @@ order and grading are described in [docs/ORCHESTRATION.md](docs/ORCHESTRATION.md
 platform-delivery-demo/
   AGENTS.md                      this file (tool-neutral project instructions)
   CLAUDE.md                      Claude Code pointer: imports AGENTS.md
+  README.md                      for humans; not part of any agent's instructions
   personas/
     client-delivery.md           lead persona
     product.md                   product persona
